@@ -26,11 +26,7 @@ class XylophoneApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
-          child: GestureDetector(
-            onVerticalDragEnd: (details) {
-              print('Dragged');
-            },
-            child: Column(
+          child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 buildKey(color: Colors.red, soundNumber: 1),
@@ -41,7 +37,6 @@ class XylophoneApp extends StatelessWidget {
                 buildKey(color: Colors.blue, soundNumber: 6),
                 buildKey(color: Colors.purple, soundNumber: 7),
               ],
-            ),
           ),
         ),
       ),
